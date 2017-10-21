@@ -1,3 +1,4 @@
+// clang++ split.cpp -std=c++11
 #include <iostream>
 #include <sstream>
 #include <vector>
@@ -8,7 +9,7 @@ vector<string> split(const string &str, char delim) {
   vector<string> tokens;
   string token;
   while (getline(iss, token, delim)) {
-    tokens.push_back(token);
+    tokens.push_back(move(token));
   }
   return tokens;
 }
