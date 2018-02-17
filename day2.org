@@ -1,0 +1,13 @@
+** test
+ use c-c ' tot open another buffer to edit source code.
+ make source code fancy in the org file
+ #+BEGIN_SRC emacs-lisp
+   (+ 1 1)
+   (require 'org)
+   (setq org-src-fontify-natively t)
+ #+END_SRC
+
+; <s tab
+#+BEGIN_SRC 
+
+#+END_SRC
