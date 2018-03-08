@@ -1,0 +1,4 @@
+xxx zzz xx "GET /shuttle/Http/1.0.gif HTTP/1.0" 200 8989
+xxx zzz xx "GET /shuttle/Http/2.0.gif HTTP/1.0" 200 8989
+xxx zzz xx "GET /shuttle/Http/1.0.gif HTTP/1.0" 200 8989
+xxx zzz xx "GET /shuttle/Http/2.0.gif HTTP/1.0" 200 8989
