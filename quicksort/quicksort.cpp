@@ -4,7 +4,9 @@ using namespace std;
 
 void quickSort(vector<int>& a, int start, int end) {
   if (start >= end)
-    return ;
+    return;
+  int pos = rand() % (start - end) + start;
+  swap(a[pos], a[start]);
   int pivot = a[start];
   int last = start;
   for (int i = start + 1; i <= end; i++) {

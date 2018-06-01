@@ -4,23 +4,21 @@
 using namespace std;
 
 bool DFS(int node, int d, unordered_map<int, vector<int> >& m, vector<bool>& visited){  
-  if (d == 3){  
-    return true;  
-  }  
-  visited[node] = true;
-  for (int neighbor : m[node]){ 
-    if (!visited[neighbor]){
-      visited[neighbor] = true;
-  
-      if (DFS(neighbor, d+1, m, visited)){
-	cout << neighbor << "  "; 
-	return true;  
-      }
-      
-      //visited[neighbor] = false;  
+    if (d == 3){  
+        return true;  
+    }  
+    visited[node] = true;
+    for (int neighbor : m[node]){ 
+        if (!visited[neighbor]) {
+            visited[neighbor] = true;
+            if (DFS(neighbor, d+1, m, visited)){
+                cout << neighbor << "  ";
+                return true;  
+            }         
+            //visited[neighbor] = false;
   
     }
-  }  
+  }
   return false;
 }
 
