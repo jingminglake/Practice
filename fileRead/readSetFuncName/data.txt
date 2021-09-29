@@ -1,0 +1,504 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.paypal.risk.computeschema;
+
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonValue;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import java.util.HashMap;
+import java.util.Map;
+import javax.validation.Valid;
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ToStringBuilder;
+
+@JsonInclude(Include.NON_NULL)
+@JsonPropertyOrder({"id", "type", "is_primary", "is_default_billing", "is_shipping", "is_business", "is_billing", "time_created", "is_active", "confirm_status", "address", "address_id", "addressee_name", "address_hash", "address32_hash", "is_address_normalized", "region", "shipping_company", "shipping_currency", "shipping_total_amt", "shipping_package_id", "shipping_created_date", "shipping_fees", "tracking_id", "tracking_status", "shipping_addr_match_delivery_addr", "shipping_addr_match_destination_addr"})
+public class Address {
+    @JsonProperty("id")
+    private String id;
+    @JsonProperty("type")
+    private Address.Type type;
+    @JsonProperty("is_primary")
+    private Address.IsPrimary isPrimary;
+    @JsonProperty("is_default_billing")
+    private Address.IsPrimary isDefaultBilling;
+    @JsonProperty("is_shipping")
+    private Address.IsPrimary isShipping;
+    @JsonProperty("is_business")
+    private Address.IsPrimary isBusiness;
+    @JsonProperty("is_billing")
+    private Address.IsPrimary isBilling;
+    @JsonProperty("time_created")
+    private String timeCreated;
+    @JsonProperty("is_active")
+    private String isActive;
+    @JsonProperty("confirm_status")
+    private Address.ConfirmStatus confirmStatus;
+    @JsonProperty("address")
+    @Valid
+    private Address_ address;
+    @JsonProperty("address_id")
+    private String addressId;
+    @JsonProperty("addressee_name")
+    private String addresseeName;
+    @JsonProperty("address_hash")
+    private String addressHash;
+    @JsonProperty("address32_hash")
+    private String address32Hash;
+    @JsonProperty("is_address_normalized")
+    private Address.IsPrimary isAddressNormalized;
+    @JsonProperty("region")
+    private String region;
+    @JsonProperty("shipping_company")
+    private String shippingCompany;
+    @JsonProperty("shipping_currency")
+    private String shippingCurrency;
+    @JsonProperty("shipping_total_amt")
+    private String shippingTotalAmt;
+    @JsonProperty("shipping_package_id")
+    private String shippingPackageId;
+    @JsonProperty("shipping_created_date")
+    private String shippingCreatedDate;
+    @JsonProperty("shipping_fees")
+    @Valid
+    private ShippingFees shippingFees;
+    @JsonProperty("tracking_id")
+    private String trackingId;
+    @JsonProperty("tracking_status")
+    private String trackingStatus;
+    @JsonProperty("shipping_addr_match_delivery_addr")
+    private String shippingAddrMatchDeliveryAddr;
+    @JsonProperty("shipping_addr_match_destination_addr")
+    private String shippingAddrMatchDestinationAddr;
+    private Map<String, Object> additionalProperties = new HashMap();
+
+    public Address() {
+    }
+
+    @JsonProperty("id")
+    public String getId() {
+        return this.id;
+    }
+
+    @JsonProperty("id")
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    @JsonProperty("type")
+    public Address.Type getType() {
+        return this.type;
+    }
+
+    @JsonProperty("type")
+    public void setType(Address.Type type) {
+        this.type = type;
+    }
+
+    @JsonProperty("is_primary")
+    public Address.IsPrimary getIsPrimary() {
+        return this.isPrimary;
+    }
+
+    @JsonProperty("is_primary")
+    public void setIsPrimary(Address.IsPrimary isPrimary) {
+        this.isPrimary = isPrimary;
+    }
+
+    @JsonProperty("is_default_billing")
+    public Address.IsPrimary getIsDefaultBilling() {
+        return this.isDefaultBilling;
+    }
+
+    @JsonProperty("is_default_billing")
+    public void setIsDefaultBilling(Address.IsPrimary isDefaultBilling) {
+        this.isDefaultBilling = isDefaultBilling;
+    }
+
+    @JsonProperty("is_shipping")
+    public Address.IsPrimary getIsShipping() {
+        return this.isShipping;
+    }
+
+    @JsonProperty("is_shipping")
+    public void setIsShipping(Address.IsPrimary isShipping) {
+        this.isShipping = isShipping;
+    }
+
+    @JsonProperty("is_business")
+    public Address.IsPrimary getIsBusiness() {
+        return this.isBusiness;
+    }
+
+    @JsonProperty("is_business")
+    public void setIsBusiness(Address.IsPrimary isBusiness) {
+        this.isBusiness = isBusiness;
+    }
+
+    @JsonProperty("is_billing")
+    public Address.IsPrimary getIsBilling() {
+        return this.isBilling;
+    }
+
+    @JsonProperty("is_billing")
+    public void setIsBilling(Address.IsPrimary isBilling) {
+        this.isBilling = isBilling;
+    }
+
+    @JsonProperty("time_created")
+    public String getTimeCreated() {
+        return this.timeCreated;
+    }
+
+    @JsonProperty("time_created")
+    public void setTimeCreated(String timeCreated) {
+        this.timeCreated = timeCreated;
+    }
+
+    @JsonProperty("is_active")
+    public String getIsActive() {
+        return this.isActive;
+    }
+
+    @JsonProperty("is_active")
+    public void setIsActive(String isActive) {
+        this.isActive = isActive;
+    }
+
+    @JsonProperty("confirm_status")
+    public Address.ConfirmStatus getConfirmStatus() {
+        return this.confirmStatus;
+    }
+
+    @JsonProperty("confirm_status")
+    public void setConfirmStatus(Address.ConfirmStatus confirmStatus) {
+        this.confirmStatus = confirmStatus;
+    }
+
+    @JsonProperty("address")
+    public Address_ getAddress() {
+        return this.address;
+    }
+
+    @JsonProperty("address")
+    public void setAddress(Address_ address) {
+        this.address = address;
+    }
+
+    @JsonProperty("address_id")
+    public String getAddressId() {
+        return this.addressId;
+    }
+
+    @JsonProperty("address_id")
+    public void setAddressId(String addressId) {
+        this.addressId = addressId;
+    }
+
+    @JsonProperty("addressee_name")
+    public String getAddresseeName() {
+        return this.addresseeName;
+    }
+
+    @JsonProperty("addressee_name")
+    public void setAddresseeName(String addresseeName) {
+        this.addresseeName = addresseeName;
+    }
+
+    @JsonProperty("address_hash")
+    public String getAddressHash() {
+        return this.addressHash;
+    }
+
+    @JsonProperty("address_hash")
+    public void setAddressHash(String addressHash) {
+        this.addressHash = addressHash;
+    }
+
+    @JsonProperty("address32_hash")
+    public String getAddress32Hash() {
+        return this.address32Hash;
+    }
+
+    @JsonProperty("address32_hash")
+    public void setAddress32Hash(String address32Hash) {
+        this.address32Hash = address32Hash;
+    }
+
+    @JsonProperty("is_address_normalized")
+    public Address.IsPrimary getIsAddressNormalized() {
+        return this.isAddressNormalized;
+    }
+
+    @JsonProperty("is_address_normalized")
+    public void setIsAddressNormalized(Address.IsPrimary isAddressNormalized) {
+        this.isAddressNormalized = isAddressNormalized;
+    }
+
+    @JsonProperty("region")
+    public String getRegion() {
+        return this.region;
+    }
+
+    @JsonProperty("region")
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    @JsonProperty("shipping_company")
+    public String getShippingCompany() {
+        return this.shippingCompany;
+    }
+
+    @JsonProperty("shipping_company")
+    public void setShippingCompany(String shippingCompany) {
+        this.shippingCompany = shippingCompany;
+    }
+
+    @JsonProperty("shipping_currency")
+    public String getShippingCurrency() {
+        return this.shippingCurrency;
+    }
+
+    @JsonProperty("shipping_currency")
+    public void setShippingCurrency(String shippingCurrency) {
+        this.shippingCurrency = shippingCurrency;
+    }
+
+    @JsonProperty("shipping_total_amt")
+    public String getShippingTotalAmt() {
+        return this.shippingTotalAmt;
+    }
+
+    @JsonProperty("shipping_total_amt")
+    public void setShippingTotalAmt(String shippingTotalAmt) {
+        this.shippingTotalAmt = shippingTotalAmt;
+    }
+
+    @JsonProperty("shipping_package_id")
+    public String getShippingPackageId() {
+        return this.shippingPackageId;
+    }
+
+    @JsonProperty("shipping_package_id")
+    public void setShippingPackageId(String shippingPackageId) {
+        this.shippingPackageId = shippingPackageId;
+    }
+
+    @JsonProperty("shipping_created_date")
+    public String getShippingCreatedDate() {
+        return this.shippingCreatedDate;
+    }
+
+    @JsonProperty("shipping_created_date")
+    public void setShippingCreatedDate(String shippingCreatedDate) {
+        this.shippingCreatedDate = shippingCreatedDate;
+    }
+
+    @JsonProperty("shipping_fees")
+    public ShippingFees getShippingFees() {
+        return this.shippingFees;
+    }
+
+    @JsonProperty("shipping_fees")
+    public void setShippingFees(ShippingFees shippingFees) {
+        this.shippingFees = shippingFees;
+    }
+
+    @JsonProperty("tracking_id")
+    public String getTrackingId() {
+        return this.trackingId;
+    }
+
+    @JsonProperty("tracking_id")
+    public void setTrackingId(String trackingId) {
+        this.trackingId = trackingId;
+    }
+
+    @JsonProperty("tracking_status")
+    public String getTrackingStatus() {
+        return this.trackingStatus;
+    }
+
+    @JsonProperty("tracking_status")
+    public void setTrackingStatus(String trackingStatus) {
+        this.trackingStatus = trackingStatus;
+    }
+
+    @JsonProperty("shipping_addr_match_delivery_addr")
+    public String getShippingAddrMatchDeliveryAddr() {
+        return this.shippingAddrMatchDeliveryAddr;
+    }
+
+    @JsonProperty("shipping_addr_match_delivery_addr")
+    public void setShippingAddrMatchDeliveryAddr(String shippingAddrMatchDeliveryAddr) {
+        this.shippingAddrMatchDeliveryAddr = shippingAddrMatchDeliveryAddr;
+    }
+
+    @JsonProperty("shipping_addr_match_destination_addr")
+    public String getShippingAddrMatchDestinationAddr() {
+        return this.shippingAddrMatchDestinationAddr;
+    }
+
+    @JsonProperty("shipping_addr_match_destination_addr")
+    public void setShippingAddrMatchDestinationAddr(String shippingAddrMatchDestinationAddr) {
+        this.shippingAddrMatchDestinationAddr = shippingAddrMatchDestinationAddr;
+    }
+
+    public String toString() {
+        return ToStringBuilder.reflectionToString(this);
+    }
+
+    public int hashCode() {
+        return HashCodeBuilder.reflectionHashCode(this);
+    }
+
+    public boolean equals(Object other) {
+        return EqualsBuilder.reflectionEquals(this, other);
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperties(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+
+    public static enum Type {
+        PRIMARY("PRIMARY"),
+        BILLING("BILLING"),
+        SHIPPING("SHIPPING"),
+        BUSINESS("BUSINESS"),
+        HOME("HOME"),
+        OFFICE("OFFICE"),
+        OTHER("OTHER");
+
+        private final String value;
+        private static Map<String, Address.Type> constants = new HashMap();
+
+        private Type(String value) {
+            this.value = value;
+        }
+
+        @JsonValue
+        public String toString() {
+            return this.value;
+        }
+
+        @JsonCreator
+        public static Address.Type fromValue(String value) {
+            Address.Type constant = (Address.Type)constants.get(value);
+            if (constant == null) {
+                throw new IllegalArgumentException(value);
+            } else {
+                return constant;
+            }
+        }
+
+        static {
+            Address.Type[] var0 = values();
+            int var1 = var0.length;
+
+            for(int var2 = 0; var2 < var1; ++var2) {
+                Address.Type c = var0[var2];
+                constants.put(c.value, c);
+            }
+
+        }
+    }
+
+    public static enum IsPrimary {
+        YES("YES"),
+        NO("NO");
+
+        private final String value;
+        private static Map<String, Address.IsPrimary> constants = new HashMap();
+
+        private IsPrimary(String value) {
+            this.value = value;
+        }
+
+        @JsonValue
+        public String toString() {
+            return this.value;
+        }
+
+        @JsonCreator
+        public static Address.IsPrimary fromValue(String value) {
+            Address.IsPrimary constant = (Address.IsPrimary)constants.get(value);
+            if (constant == null) {
+                throw new IllegalArgumentException(value);
+            } else {
+                return constant;
+            }
+        }
+
+        static {
+            Address.IsPrimary[] var0 = values();
+            int var1 = var0.length;
+
+            for(int var2 = 0; var2 < var1; ++var2) {
+                Address.IsPrimary c = var0[var2];
+                constants.put(c.value, c);
+            }
+
+        }
+    }
+
+    public static enum ConfirmStatus {
+        CONFIRMED("CONFIRMED"),
+        UNCONFIRMED("UNCONFIRMED"),
+        REQUESTED("REQUESTED"),
+        SENT("SENT"),
+        VERIFIED("VERIFIED"),
+        INVALID("INVALID"),
+        PENDING("PENDING"),
+        FAILED("FAILED"),
+        DEFAULT("DEFAULT");
+
+        private final String value;
+        private static Map<String, Address.ConfirmStatus> constants = new HashMap();
+
+        private ConfirmStatus(String value) {
+            this.value = value;
+        }
+
+        @JsonValue
+        public String toString() {
+            return this.value;
+        }
+
+        @JsonCreator
+        public static Address.ConfirmStatus fromValue(String value) {
+            Address.ConfirmStatus constant = (Address.ConfirmStatus)constants.get(value);
+            if (constant == null) {
+                throw new IllegalArgumentException(value);
+            } else {
+                return constant;
+            }
+        }
+
+        static {
+            Address.ConfirmStatus[] var0 = values();
+            int var1 = var0.length;
+
+            for(int var2 = 0; var2 < var1; ++var2) {
+                Address.ConfirmStatus c = var0[var2];
+                constants.put(c.value, c);
+            }
+
+        }
+    }
+}

@@ -1,0 +1,6 @@
+PaymentEvaluationRequest.funding_instruments.bank_info(list).bank_account_name.prefix
+PaymentEvaluationRequest.funding_instruments.bank_info(list).bank_account_name.given_name
+PaymentEvaluationRequest.funding_instruments.bank_info(list).bank_account_name.surname
+PaymentEvaluationRequest.funding_instruments.bank_info(list).bank_account_name.middle_name
+PaymentEvaluationRequest.funding_instruments.bank_info(list).bank_account_name.suffix
+PaymentEvaluationRequest.funding_instruments.bank_info(list).bank_account_name.alternate_full_name
